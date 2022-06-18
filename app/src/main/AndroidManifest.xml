@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TugasAkhirGan">
-        <activity android:name=".riwayat"></activity>
+        <activity android:name=".chat"></activity>
+        <activity android:name=".riwayat" />
         <activity android:name=".activity_pembayaran" />
         <activity android:name=".activity_instalasiserver" />
         <activity android:name=".activity_perdaganganti" />
