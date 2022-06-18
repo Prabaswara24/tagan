@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tugas Akhir Gan</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_signup">REGISTER</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_dob">Address</string>
+    <string name="hint_gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_link_login">Login</string>
+</resources>

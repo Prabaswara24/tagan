@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="926dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/hijau">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/keranjang"
+                    android:src="@drawable/keranjang" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginRight="175dp"
+                    android:text="Pembayaran"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Rek Bca : 0829058915"
+                     android:textColor="@color/black"
+                     android:layout_marginTop="30dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

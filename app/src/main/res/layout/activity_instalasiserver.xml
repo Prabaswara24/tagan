@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="926dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/hijau">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/server"
+                    android:src="@drawable/server" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Instalasi Server"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginRight="175dp"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="490dp"
+                    android:layout_toRightOf="@+id/gender_textview"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/JasaInstalasiServerWindows_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jasa Instalasi  Server Windows 2003,2008r2,2012r2"
+                        android:checked="true"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/JasaSetupLinuxServer_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Jasa Setup Linux Server : Ubuntu,centos,redhat"
+                        />
+                    <RadioButton
+                        android:id="@+id/JasaInstalasiBackupdanRestoreDataServer_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Jasa Instalasi Backup dan Restore Data Server"
+                        />
+                    <RadioButton
+                        android:id="@+id/JasaPerawatandanMaintenanceServerWindowsdanJaringan_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Jasa Perawatan dan Maintenance Server Windows dan Jaringan"
+                        />
+                    <RadioButton
+                        android:id="@+id/JasaPerbaikanServerWindows_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Jasa Perbaikan Server Windows"
+                        />
+                </RadioGroup>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/hijau">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Total" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.10.000"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/btn_bayar"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:background="#008000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Bayar"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="926dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/hijau">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/network"
+                    android:src="@drawable/network" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jasa Konfigurasi Jaringan"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginRight="175dp"
+                    android:textSize="20dp"
+                    />
+
+            </RelativeLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/headline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Paket Instalasi Routing"
+                            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/headline"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="8dp"
+                            android:text="Ip Adrress,Routing Static,Port Adrress Traslation Router"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eaeaea" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:text="Pada tutorial ini kalian akan belajar cara membuat aplikasi android untuk menampilkan Expandable CardView di Android Studio dengan mudah"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="Visit"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subscribe YouTube" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_layout0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eaeaea" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/text0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:text="Pada tutorial ini kalian akan belajar cara membuat aplikasi android untuk menampilkan Expandable CardView di Android Studio dengan mudah"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text0"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="Visit"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subscribe YouTube" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/headline1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Paket Istalasi Switch"
+                            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/headline1"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="8dp"
+                            android:text="Acces Vlan Configuration,Acces dan TrunkinPort,Default Spanning,Tacacs,Static Routing,Backup Config"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eaeaea" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/text4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:text="Pada tutorial ini kalian akan belajar cara membuat aplikasi android untuk menampilkan Expandable CardView di Android Studio dengan mudah"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text4"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="Visit"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subscribe YouTube" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eaeaea" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:text="Pada tutorial ini kalian akan belajar cara membuat aplikasi android untuk menampilkan Expandable CardView di Android Studio dengan mudah"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text1"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="Visit"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subscribe YouTube" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/headline2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="Paket Instalasi Email Security"
+                            android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/headline2"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="8dp"
+                            android:text="Incoming EmailInspection Outgoing Email Inspection,Antispam,Gray Mail Backup Config"
+                            android:textAppearance="?attr/textAppearanceBody2"
+                            android:textColor="?android:attr/textColorSecondary" />
+
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eaeaea" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:text="Incoming EmailInspection Outgoing Email Inspection,Antispam,Gray Mail Backup Config"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text2"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="Visit"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subscribe YouTube" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#eaeaea" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:id="@id/text0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:text="Pada tutorial ini kalian akan belajar cara membuat aplikasi android untuk menampilkan Expandable CardView di Android Studio dengan mudah"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="?android:attr/textColorSecondary" />
+
+                            <!-- Buttons -->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/text0"
+                                android:layout_marginTop="8dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:text="Visit" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Subscribe YouTube" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:background="@color/hijau">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Total" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.10.000"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <Button
+                    android:id="@+id/btn_bayar"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:background="#008000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Bayar"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
