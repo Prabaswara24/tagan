@@ -102,7 +102,7 @@ public class Register extends AppCompatActivity {
 
                 try {
                     JSONObject jObj = new JSONObject(response);
-                    boolean error = jObj.getBoolean("error");
+                    boolean error = jObj.getBoolean("status");
 
                     if (!error) {
                         String user = jObj.getJSONObject("user").getString("name");
