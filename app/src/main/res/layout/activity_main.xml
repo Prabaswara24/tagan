@@ -228,7 +228,7 @@
                 android:orientation="vertical"></LinearLayout>
 
             <Button
-                android:id="@+id/button2"
+                android:onClick="openWA"
                 android:layout_width="127dp"
                 android:layout_height="45dp"
                 android:text="Chat" />

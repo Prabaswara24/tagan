@@ -1,6 +1,7 @@
 package com.example.tugasakhirgan;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +10,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button login, logout, chat;
+    Button login, logout;
     ImageView pindahHal1;
     ImageView pindahHal2;
     ImageView pindahHal3;
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         login = (Button) findViewById(R.id.btn_login);
         logout = (Button) findViewById(R.id.btn_logout);
-        chat = (Button) findViewById(R.id.button2);
         pindahHal1 = findViewById(R.id.tap1);
         pindahHal2 = findViewById(R.id.tap2);
         pindahHal3 = findViewById(R.id.tap3);
@@ -48,14 +48,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 finish();
                 SharedPrefmanager.getInstance(getApplicationContext()).logout();
-            }
-        });
-
-        chat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), chat.class);
-                startActivity(i);
             }
         });
 
@@ -87,5 +79,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    public void openWA(View view) {
+        String number = "6282230535038";
+        String url = "https://api.whatsapp.com/send?phone=" + number + "&text=Halo%20Admin";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setPackage("com.whatsapp");
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 }
