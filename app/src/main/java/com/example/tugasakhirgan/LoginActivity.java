@@ -1,11 +1,11 @@
 package com.example.tugasakhirgan;
+
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -14,6 +14,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -23,7 +24,6 @@ import java.util.Map;
 public class LoginActivity extends MainActivity {
 
     EditText editTextUsername, editTextPassword;
-    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,16 +49,23 @@ public class LoginActivity extends MainActivity {
         });
 
         //if user presses on not registered
+        findViewById(R.id.btn_registrasi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Register.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void userLogin() {
         //first getting the values
-        final String username = editTextUsername.getText().toString();
+        final String email = editTextUsername.getText().toString();
         final String password = editTextPassword.getText().toString();
 
         //validating inputs
-        if (TextUtils.isEmpty(username)) {
-            editTextUsername.setError("Please enter your username");
+        if (TextUtils.isEmpty(email)) {
+            editTextUsername.setError("Please enter your email");
             editTextUsername.requestFocus();
             return;
         }
@@ -70,31 +77,30 @@ public class LoginActivity extends MainActivity {
         }
 
         //if everything is fine
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, 'http://192.168.18.92/api_ta/usercontroller/login',
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://webadminbensae.my.id/api_ta/UserController/login",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        progressBar.setVisibility(View.GONE);
-
                         try {
                             //converting response to json object
                             JSONObject obj = new JSONObject(response);
 
                             //if no error in response
-                            if (!obj.getBoolean("error")) {
-                                Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+                            if (obj.getBoolean("status")) {
+                                Toast.makeText(getApplicationContext(), "Yakin??", Toast.LENGTH_SHORT).show();
 
-                                //getting the user from the response
-                                JSONObject userJson = obj.getJSONObject("user");
+                                JSONArray jsonObject = obj.getJSONArray("data");
 
-                                //creating a new user object
+                                Log.d("volley", "response : " + jsonObject.getJSONObject(0).getString("email"));
+
                                 User user = new User(
-                                        userJson.getInt("id"),
-                                        userJson.getString("email")
+                                        jsonObject.getJSONObject(0).getInt("Id"),
+                                        jsonObject.getJSONObject(0).getString("email")
                                 );
 
                                 //storing the user in shared preferences
                                 SharedPrefmanager.getInstance(getApplicationContext()).userLogin(user);
+
 
                                 //starting the profile activity
                                 finish();
@@ -116,8 +122,9 @@ public class LoginActivity extends MainActivity {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("username", username);
+                params.put("email", email);
                 params.put("password", password);
+                params.put("role", "2");
                 return params;
             }
         };

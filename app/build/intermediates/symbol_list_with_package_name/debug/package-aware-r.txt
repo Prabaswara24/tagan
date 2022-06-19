@@ -2661,8 +2661,11 @@ id bounceStart
 id btn_bayar
 id btn_link_login
 id btn_login
+id btn_logout
 id btn_registrasi
 id btn_signup
+id button
+id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3163,6 +3166,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_chat
 layout activity_instalasiserver
 layout activity_jasakonsultan
 layout activity_konfigurasijaringan

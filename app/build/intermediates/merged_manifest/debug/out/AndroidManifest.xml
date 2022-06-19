@@ -20,6 +20,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.TugasAkhirGan" >
+        <activity android:name="com.example.tugasakhirgan.chat" />
         <activity android:name="com.example.tugasakhirgan.riwayat" />
         <activity android:name="com.example.tugasakhirgan.activity_pembayaran" />
         <activity android:name="com.example.tugasakhirgan.activity_instalasiserver" />
@@ -29,7 +30,7 @@
         <activity android:name="com.example.tugasakhirgan.activity_jasakonsultan" />
         <activity android:name="com.example.tugasakhirgan.UserActivity" />
         <activity android:name="com.example.tugasakhirgan.Register" />
-        <activity android:name="com.example.tugasakhirgan.login" />
+        <activity android:name="com.example.tugasakhirgan.LoginActivity" />
         <activity android:name="com.example.tugasakhirgan.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -62,6 +62,7 @@ public class SharedPrefmanager {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.clear();
         editor.apply();
-        mCtx.startActivity(new Intent(mCtx, login.class));
+        editor.commit();
+        mCtx.startActivity(new Intent(mCtx, LoginActivity.class));
     }
 }

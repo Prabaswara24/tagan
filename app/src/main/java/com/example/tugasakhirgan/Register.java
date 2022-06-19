@@ -10,21 +10,23 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Register extends AppCompatActivity {
 
     private static final String TAG = "RegisterActivity";
-    private static final String URL_FOR_REGISTRATION = "https://127.0.0.1/android_login_example/register.php";
+    private static final String URL_FOR_REGISTRATION = "https://webadminbensae.my.id/api_ta/UserController/registrasi";
     ProgressDialog progressDialog;
 
     private EditText signupInputName, signupInputEmail, signupInputPassword, signupInputAge;
@@ -60,7 +62,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(getApplicationContext(),login.class);
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);
             }
         });
@@ -95,7 +97,7 @@ public class Register extends AppCompatActivity {
 
             @Override
             public void onResponse(String response) {
-                Log.d(TAG, "Register Response: " + response.toString());
+                Log.d(TAG, "Register Response: " + response);
                 hideDialog();
 
                 try {
@@ -109,7 +111,7 @@ public class Register extends AppCompatActivity {
                         // Launch login activity
                         Intent intent = new Intent(
                                 Register.this,
-                                login.class);
+                                LoginActivity.class);
                         startActivity(intent);
                         finish();
                     } else {
@@ -137,15 +139,18 @@ public class Register extends AppCompatActivity {
             protected Map<String, String> getParams() {
                 // Posting params to register url
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("name", name);
+                params.put("nama", name);
                 params.put("email", email);
+                params.put("no", "0");
                 params.put("password", password);
                 params.put("gender", gender);
-                params.put("age", dob);
+                params.put("address", dob);
+                params.put("foto_ktp", "");
                 return params;
             }
         };
         // Adding request to request queue
+        VolleySingleton.getInstance(this).addToRequestQueue(strReq);
     }
 
     private void showDialog() {
