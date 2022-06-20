@@ -2669,9 +2669,6 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
-id cardView1
-id cardView2
-id cardView3
 id carryVelocity
 id center
 id center_horizontal
@@ -2814,12 +2811,6 @@ id legacy
 id line1
 id line3
 id linear
-id linear_layout
-id linear_layout0
-id linear_layout1
-id linear_layout2
-id linear_layout3
-id linear_layout4
 id listMode
 id list_item
 id male_radio_btn
@@ -3019,10 +3010,7 @@ id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
-id text0
-id text1
 id text2
-id text4
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
