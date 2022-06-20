@@ -1,6 +1,5 @@
-com/example/tugasakhirgan/activity_jasakonsultan.java
- com.example.tugasakhirgan.activity_jasakonsultan
- com.example.tugasakhirgan.activity_jasakonsultan$1
+com/example/tugasakhirgan/BuildConfig.java
+ com.example.tugasakhirgan.BuildConfig
 com/example/tugasakhirgan/SharedPrefmanager.java
  com.example.tugasakhirgan.SharedPrefmanager
 com/example/tugasakhirgan/AppVar.java
@@ -31,8 +30,6 @@ com/example/tugasakhirgan/UserActivity.java
  com.example.tugasakhirgan.UserActivity
 com/example/tugasakhirgan/activity_instalasiserver.java
  com.example.tugasakhirgan.activity_instalasiserver
-com/example/tugasakhirgan/BuildConfig.java
- com.example.tugasakhirgan.BuildConfig
 com/example/tugasakhirgan/LoginActivity.java
  com.example.tugasakhirgan.LoginActivity
  com.example.tugasakhirgan.LoginActivity$1
@@ -40,6 +37,12 @@ com/example/tugasakhirgan/LoginActivity.java
  com.example.tugasakhirgan.LoginActivity$3
  com.example.tugasakhirgan.LoginActivity$4
  com.example.tugasakhirgan.LoginActivity$5
+com/example/tugasakhirgan/activity_jasakonsultan.java
+ com.example.tugasakhirgan.activity_jasakonsultan
+ com.example.tugasakhirgan.activity_jasakonsultan$1
+ com.example.tugasakhirgan.activity_jasakonsultan$1$1
+ com.example.tugasakhirgan.activity_jasakonsultan$2
+ com.example.tugasakhirgan.activity_jasakonsultan$3
 com/example/tugasakhirgan/MainActivity.java
  com.example.tugasakhirgan.MainActivity
  com.example.tugasakhirgan.MainActivity$1

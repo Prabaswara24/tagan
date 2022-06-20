@@ -28,12 +28,12 @@
         "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\drawable\\prod.png"
     },
     {
-        "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_minus.xml.flat",
-        "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\drawable\\ic_minus.xml"
-    },
-    {
         "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_konfigurasijaringan.xml.flat",
         "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\layout\\activity_konfigurasijaringan.xml"
+    },
+    {
+        "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_minus.xml.flat",
+        "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\drawable\\ic_minus.xml"
     },
     {
         "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profile.png.flat",
@@ -60,12 +60,12 @@
         "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\layout\\activity_pembayaran.xml"
     },
     {
-        "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_rectangle_3.xml.flat",
-        "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\drawable\\ic_rectangle_3.xml"
-    },
-    {
         "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\font_rubik_bold.xml.flat",
         "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\font\\rubik_bold.xml"
+    },
+    {
+        "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_rectangle_3.xml.flat",
+        "source": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\src\\main\\res\\drawable\\ic_rectangle_3.xml"
     },
     {
         "merged": "D:\\Lesson\\Kodeng\\Mobile\\Java\\tagan\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_plus.xml.flat",

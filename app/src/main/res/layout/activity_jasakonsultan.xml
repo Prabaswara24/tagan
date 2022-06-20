@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -39,48 +38,10 @@
                     android:layout_centerHorizontal="true"
                     android:textAlignment="center"
                     android:layout_marginRight="175dp"
-                    android:textSize="20dp"
-                    />
+                    android:textSize="20dp" />
 
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-                <RadioGroup
-                    android:id="@+id/radio_group"
-                    android:layout_width="match_parent"
-                    android:layout_height="490dp"
-                    android:layout_toRightOf="@+id/gender_textview"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/KonsultasiPerancanganSistemInformasi_radio_btn"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Konsultasi Perancangan Sistem Informasi"
-                        android:checked="true"
 
-                        />
-                    <RadioButton
-                        android:id="@+id/JasaKonsultasiPengembanganSistemIOT_radio_btn"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text = "Jasa Konsultasi Pengembangan Sistem IOT"
-                        />
-                    <RadioButton
-                        android:id="@+id/JasaKonsultasiInstalasidanKonfigurasiPerangkatIT_radio_btn"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text = "Jasa Konsultasi Instalasi dan Konfigurasi Perangkat IT"
-                        />
-                    <RadioButton
-                        android:id="@+id/JasaKonsultasiPengembanganSistemTrackingIndoordanOutdoor_radio_btn"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text = "Jasa Konsultasi Pengembangan Sistem Tracking (Indoor dan Outdoor)"
-                        />
-                </RadioGroup>
-            </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -91,15 +52,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="Total" />
+                    android:text="Total Rp. " />
 
                 <TextView
                     android:id="@+id/tv_total"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rp.10.000"
+                    android:text="0"
                     android:textColor="@color/black"
                     android:textSize="16dp" />
+
                 <Button
                     android:id="@+id/btn_bayar"
                     android:layout_width="120dp"
@@ -115,6 +77,43 @@
 
 
             </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="490dp"
+                    android:layout_toRightOf="@+id/gender_textview"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/KonsultasiPerancanganSistemInformasi_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        />
+                    <RadioButton
+                        android:id="@+id/JasaKonsultasiPengembanganSistemIOT_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        />
+                    <RadioButton
+                        android:id="@+id/JasaKonsultasiInstalasidanKonfigurasiPerangkatIT_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        />
+                    <RadioButton
+                        android:id="@+id/JasaKonsultasiPengembanganSistemTrackingIndoordanOutdoor_radio_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        />
+                </RadioGroup>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
