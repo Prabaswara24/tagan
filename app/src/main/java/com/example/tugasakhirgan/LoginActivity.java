@@ -87,7 +87,7 @@ public class LoginActivity extends MainActivity {
 
                             //if no error in response
                             if (obj.getBoolean("status")) {
-                                Toast.makeText(getApplicationContext(), "Yakin??", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Sukses Login", Toast.LENGTH_SHORT).show();
 
                                 JSONArray jsonObject = obj.getJSONArray("data");
 
@@ -106,7 +106,7 @@ public class LoginActivity extends MainActivity {
                                 finish();
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             } else {
-                                Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Akun Tidak Ditemukan", Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

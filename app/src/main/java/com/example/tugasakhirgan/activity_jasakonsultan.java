@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -20,20 +21,37 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import static com.android.volley.VolleyLog.TAG;
+
 public class activity_jasakonsultan extends AppCompatActivity {
-    Button bayar;
+    final int[] id_jasa = {0};
     RadioGroup radiogroup;
     RadioButton rb1, rb2, rb3, rb4;
     TextView total;
+    Button bayar, login;
+    String jasa = "";
+    String harga = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jasakonsultan);
 
+        bayar = (Button) findViewById(R.id.btn_bayar);
+        login = (Button) findViewById(R.id.btn_login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(i);
+            }
+        });
         radiogroup = findViewById(R.id.radio_group);
         rb1 = findViewById(R.id.KonsultasiPerancanganSistemInformasi_radio_btn);
         rb2 = findViewById(R.id.JasaKonsultasiPengembanganSistemIOT_radio_btn);
@@ -67,24 +85,64 @@ public class activity_jasakonsultan extends AppCompatActivity {
 
                                         if (checkedId == R.id.KonsultasiPerancanganSistemInformasi_radio_btn) {
                                             try {
+                                                if (SharedPrefmanager.getInstance(activity_jasakonsultan.this).isLoggedIn()) {
+                                                    login.setVisibility(View.GONE);
+                                                    bayar.setVisibility(View.VISIBLE);
+                                                } else {
+                                                    login.setVisibility(View.VISIBLE);
+                                                    bayar.setVisibility(View.GONE);
+                                                }
+                                                jasa = jsonObject.getJSONObject(0).getString("nama");
+                                                harga = jsonObject.getJSONObject(0).getString("harga");
+                                                id_jasa[0] = jsonObject.getJSONObject(0).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(0).getString("harga"));
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
                                             }
                                         } else if (checkedId == R.id.JasaKonsultasiPengembanganSistemIOT_radio_btn) {
                                             try {
+                                                if (SharedPrefmanager.getInstance(activity_jasakonsultan.this).isLoggedIn()) {
+                                                    login.setVisibility(View.GONE);
+                                                    bayar.setVisibility(View.VISIBLE);
+                                                } else {
+                                                    login.setVisibility(View.VISIBLE);
+                                                    bayar.setVisibility(View.GONE);
+                                                }
+                                                jasa = jsonObject.getJSONObject(1).getString("nama");
+                                                harga = jsonObject.getJSONObject(1).getString("harga");
+                                                id_jasa[0] = jsonObject.getJSONObject(1).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(1).getString("harga"));
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
                                             }
                                         } else if (checkedId == R.id.JasaKonsultasiInstalasidanKonfigurasiPerangkatIT_radio_btn) {
                                             try {
+                                                if (SharedPrefmanager.getInstance(activity_jasakonsultan.this).isLoggedIn()) {
+                                                    login.setVisibility(View.GONE);
+                                                    bayar.setVisibility(View.VISIBLE);
+                                                } else {
+                                                    login.setVisibility(View.VISIBLE);
+                                                    bayar.setVisibility(View.GONE);
+                                                }
+                                                jasa = jsonObject.getJSONObject(2).getString("nama");
+                                                harga = jsonObject.getJSONObject(2).getString("harga");
+                                                id_jasa[0] = jsonObject.getJSONObject(2).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(2).getString("harga"));
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
                                             }
                                         } else if (checkedId == R.id.JasaKonsultasiPengembanganSistemTrackingIndoordanOutdoor_radio_btn) {
                                             try {
+                                                if (SharedPrefmanager.getInstance(activity_jasakonsultan.this).isLoggedIn()) {
+                                                    login.setVisibility(View.GONE);
+                                                    bayar.setVisibility(View.VISIBLE);
+                                                } else {
+                                                    login.setVisibility(View.VISIBLE);
+                                                    bayar.setVisibility(View.GONE);
+                                                }
+                                                jasa = jsonObject.getJSONObject(3).getString("nama");
+                                                harga = jsonObject.getJSONObject(3).getString("harga");
+                                                id_jasa[0] = jsonObject.getJSONObject(3).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(3).getString("harga"));
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
@@ -111,15 +169,53 @@ public class activity_jasakonsultan extends AppCompatActivity {
                 });
         VolleySingleton.getInstance(this).addToRequestQueue(stringRequest);
 
-        bayar = (Button) findViewById(R.id.btn_bayar);
-
+        bayar.setVisibility(View.GONE);
+        login.setVisibility(View.GONE);
 
         bayar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(activity_jasakonsultan.this, activity_pembayaran.class);
-                startActivity(i);
+                userBayar();
             }
         });
+    }
+
+    private void userBayar() {
+
+        //if everything is fine
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://webadminbensae.my.id/api_ta/UserController/pembayaran",
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d(TAG, "Response: " + response);
+                        Toast.makeText(getApplicationContext(), "Memproses Pesanan", Toast.LENGTH_SHORT).show();
+                        String value = harga;
+                        Intent i = new Intent(getApplicationContext(), activity_pembayaran.class);
+                        i.putExtra("harga", value);
+                        startActivity(i);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                User user = SharedPrefmanager.getInstance(activity_jasakonsultan.this).getUser();
+                Map<String, String> params = new HashMap<>();
+                params.put("id_user", String.valueOf(user.getId()));
+                params.put("id_metode", "1");
+                params.put("jasa", jasa);
+                params.put("id_jasa", String.valueOf(id_jasa[0]));
+                params.put("harga", harga);
+                params.put("id_transfer", "1");
+                params.put("bukti_pembayaran", "");
+                return params;
+            }
+        };
+
+        VolleySingleton.getInstance(this).addToRequestQueue(stringRequest);
     }
 }

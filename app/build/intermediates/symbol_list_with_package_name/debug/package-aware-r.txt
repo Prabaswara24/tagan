@@ -2562,6 +2562,9 @@ id JasaSetupLinuxServer_radio_btn
 id KonsultasiPerancanganSistemInformasi_radio_btn
 id META
 id NO_DEBUG
+id Paket_Instalasi_Email_Security
+id Paket_Instalasi_Routing
+id Paket_Istalasi_Switch
 id PengembangabnSistemInformasiInventori_radio_btn
 id PengembanganSistemAkademik_radio_btn
 id PengembanganSistemKeuangan_radio_btn
@@ -2659,6 +2662,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btn_bayar
+id btn_chat
 id btn_link_login
 id btn_login
 id btn_logout

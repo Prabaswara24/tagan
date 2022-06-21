@@ -17,59 +17,22 @@
             android:layout_height="926dp"
             android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@color/hijau">
-
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="320dp"
-                    android:text="Login"
-                    android:background="@color/white"
-                    android:id="@+id/btn_login" />
-
-                <Button
-                    android:id="@+id/btn_logout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="320dp"
-                    android:background="@color/white"
-                    android:text="Out" />
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="50dp"
-                    android:background="@drawable/logo"
-                    android:src="@drawable/logo" />
-
-                <TextView
-                    android:id="@+id/textview1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Layanan dan Jasa"
-                    android:textColor="@color/white"
-                    android:layout_marginTop="150dp"
-                    android:layout_centerHorizontal="true"
-                    android:textAlignment="center"
-                    android:layout_marginRight="175dp"
-                    android:textSize="20dp"
-                    />
-
-            </RelativeLayout>
-
+            <Button
+                android:id="@+id/btn_chat"
+                android:onClick="openWA"
+                android:layout_width="127dp"
+                android:layout_height="45dp"
+                android:text="Chat" />
 
 
             //line 1
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="80dp"
                 android:orientation="horizontal">
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -227,11 +190,50 @@
                 android:layout_marginTop="50dp"
                 android:orientation="vertical"></LinearLayout>
 
-            <Button
-                android:onClick="openWA"
-                android:layout_width="127dp"
-                android:layout_height="45dp"
-                android:text="Chat" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/hijau">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="320dp"
+                    android:text="Login"
+                    android:background="@color/white"
+                    android:id="@+id/btn_login" />
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="320dp"
+                    android:background="@color/white"
+                    android:text="Logout"
+                    android:textAllCaps="false" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/logo"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Layanan dan Jasa"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginRight="175dp"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>

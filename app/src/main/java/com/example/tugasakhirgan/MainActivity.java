@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button login, logout;
+    Button login, logout, chat;
     ImageView pindahHal1;
     ImageView pindahHal2;
     ImageView pindahHal3;
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        chat = (Button) findViewById(R.id.btn_chat);
         login = (Button) findViewById(R.id.btn_login);
         logout = (Button) findViewById(R.id.btn_logout);
         pindahHal1 = findViewById(R.id.tap1);
@@ -30,9 +31,11 @@ public class MainActivity extends AppCompatActivity {
         if (SharedPrefmanager.getInstance(this).isLoggedIn()) {
             login.setVisibility(View.GONE);
             logout.setVisibility(View.VISIBLE);
+            chat.setVisibility(View.VISIBLE);
         } else {
             login.setVisibility(View.VISIBLE);
             logout.setVisibility(View.GONE);
+            chat.setVisibility(View.GONE);
         }
 
         login.setOnClickListener(new View.OnClickListener() {

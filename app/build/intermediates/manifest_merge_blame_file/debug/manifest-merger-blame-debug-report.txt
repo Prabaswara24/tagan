@@ -6,107 +6,107 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml
+8-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="31" />
-9-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml
+9-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:5:5-67
-11-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:5:22-64
+11-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:7:5-36:19
+13-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:7:5-36:19
 14        android:allowBackup="true"
-14-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:8:9-35
+14-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.7.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9b4bbe17406ebdd5cecd894aeda4ed80\core-1.7.0\AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.7.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\9b4bbe17406ebdd5cecd894aeda4ed80\core-1.7.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:icon="@mipmap/ic_launcher"
-17-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:9:9-43
+17-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:9:9-43
 18        android:label="@string/app_name"
-18-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:10:9-41
+18-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:10:9-41
 19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:11:9-54
+19-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:11:9-54
 20        android:supportsRtl="true"
-20-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:12:9-35
+20-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:12:9-35
 21        android:testOnly="true"
 22        android:theme="@style/Theme.TugasAkhirGan" >
-22-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:13:9-51
+22-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:13:9-51
 23        <activity android:name="com.example.tugasakhirgan.chat" />
-23-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:14:9-51
-23-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:14:19-39
+23-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:14:9-51
+23-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:14:19-39
 24        <activity android:name="com.example.tugasakhirgan.riwayat" />
-24-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:15:9-45
-24-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:15:19-42
+24-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:15:9-45
+24-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:15:19-42
 25        <activity android:name="com.example.tugasakhirgan.activity_pembayaran" />
-25-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:16:9-57
-25-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:16:19-54
+25-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:16:9-57
+25-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:16:19-54
 26        <activity android:name="com.example.tugasakhirgan.activity_instalasiserver" />
-26-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:17:9-62
-26-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:17:19-59
+26-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:17:9-62
+26-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:17:19-59
 27        <activity android:name="com.example.tugasakhirgan.activity_perdaganganti" />
-27-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:18:9-60
-27-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:18:19-57
+27-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:18:9-60
+27-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:18:19-57
 28        <activity android:name="com.example.tugasakhirgan.activity_logout" />
-28-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:19:9-53
-28-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:19:19-50
+28-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:19:9-53
+28-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:19:19-50
 29        <activity android:name="com.example.tugasakhirgan.Activity_konfigurasijaringan" />
-29-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:20:9-66
-29-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:20:19-63
+29-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:20:9-66
+29-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:20:19-63
 30        <activity android:name="com.example.tugasakhirgan.activity_jasakonsultan" />
-30-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:21:9-60
-30-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:21:19-57
+30-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:21:9-60
+30-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:21:19-57
 31        <activity android:name="com.example.tugasakhirgan.UserActivity" />
-31-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:22:9-50
-31-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:22:19-47
+31-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:22:9-50
+31-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:22:19-47
 32        <activity android:name="com.example.tugasakhirgan.Register" />
-32-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:23:9-46
-32-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:23:19-43
+32-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:23:9-46
+32-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:23:19-43
 33        <activity android:name="com.example.tugasakhirgan.LoginActivity" />
-33-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:24:9-51
-33-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:24:19-48
+33-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:24:9-51
+33-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:24:19-48
 34        <activity android:name="com.example.tugasakhirgan.MainActivity" >
-34-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:25:9-31:20
-34-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:25:19-47
+34-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:25:9-31:20
+34-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:25:19-47
 35            <intent-filter>
-35-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:26:13-30:29
+35-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:26:13-30:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:27:17-69
-36-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:27:25-66
+36-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:27:17-69
+36-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:27:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:29:17-77
-38-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:29:27-74
+38-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:29:17-77
+38-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:29:27-74
 39            </intent-filter>
 40        </activity>
 41
 42        <meta-data
-42-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:33:9-35:57
+42-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:33:9-35:57
 43            android:name="preloaded_fonts"
-43-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:34:13-43
+43-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:34:13-43
 44            android:resource="@array/preloaded_fonts" />
-44-->E:\Politeknik Negri Jember\apps\TugasAkhirGan\app\src\main\AndroidManifest.xml:35:13-54
+44-->D:\Lesson\Kodeng\Mobile\Java\tagan\app\src\main\AndroidManifest.xml:35:13-54
 45
 46        <provider
-46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+46-->[androidx.emoji2:emoji2:1.0.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+47-->[androidx.emoji2:emoji2:1.0.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
 48            android:authorities="com.example.tugasakhirgan.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+48-->[androidx.emoji2:emoji2:1.0.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
 49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+49-->[androidx.emoji2:emoji2:1.0.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
 50            <meta-data
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+50-->[androidx.emoji2:emoji2:1.0.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
 51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+51-->[androidx.emoji2:emoji2:1.0.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
 52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+52-->[androidx.emoji2:emoji2:1.0.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\51c794e8d58f2add1b6e1035ee7c058d\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
 53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
 54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] D:\Apk\Android Studio\.gradle\caches\transforms-2\files-2.1\e539e26c730ec8f29e3c4a27f918073b\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
 56        </provider>
 57    </application>
 58

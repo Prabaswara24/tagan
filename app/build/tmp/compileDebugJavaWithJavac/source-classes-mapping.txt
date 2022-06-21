@@ -1,11 +1,7 @@
-com/example/tugasakhirgan/activity_jasakonsultan.java
- com.example.tugasakhirgan.activity_jasakonsultan
- com.example.tugasakhirgan.activity_jasakonsultan$1
- com.example.tugasakhirgan.activity_jasakonsultan$1$1
- com.example.tugasakhirgan.activity_jasakonsultan$2
- com.example.tugasakhirgan.activity_jasakonsultan$3
-com/example/tugasakhirgan/SharedPrefmanager.java
- com.example.tugasakhirgan.SharedPrefmanager
+com/example/tugasakhirgan/UserActivity.java
+ com.example.tugasakhirgan.UserActivity
+com/example/tugasakhirgan/BuildConfig.java
+ com.example.tugasakhirgan.BuildConfig
 com/example/tugasakhirgan/AppVar.java
  com.example.tugasakhirgan.AppVar
 com/example/tugasakhirgan/riwayat.java
@@ -16,11 +12,6 @@ com/example/tugasakhirgan/VolleySingleton.java
  com.example.tugasakhirgan.VolleySingleton
 com/example/tugasakhirgan/activity_logout.java
  com.example.tugasakhirgan.activity_logout
-com/example/tugasakhirgan/activity_pembayaran.java
- com.example.tugasakhirgan.activity_pembayaran
-com/example/tugasakhirgan/Activity_konfigurasijaringan.java
- com.example.tugasakhirgan.Activity_konfigurasijaringan
- com.example.tugasakhirgan.Activity_konfigurasijaringan$1
 com/example/tugasakhirgan/LoginActivity.java
  com.example.tugasakhirgan.LoginActivity
  com.example.tugasakhirgan.LoginActivity$1
@@ -28,6 +19,8 @@ com/example/tugasakhirgan/LoginActivity.java
  com.example.tugasakhirgan.LoginActivity$3
  com.example.tugasakhirgan.LoginActivity$4
  com.example.tugasakhirgan.LoginActivity$5
+com/example/tugasakhirgan/SharedPrefmanager.java
+ com.example.tugasakhirgan.SharedPrefmanager
 com/example/tugasakhirgan/Register.java
  com.example.tugasakhirgan.Register
  com.example.tugasakhirgan.Register$1
@@ -35,8 +28,28 @@ com/example/tugasakhirgan/Register.java
  com.example.tugasakhirgan.Register$3
  com.example.tugasakhirgan.Register$4
  com.example.tugasakhirgan.Register$5
-com/example/tugasakhirgan/UserActivity.java
- com.example.tugasakhirgan.UserActivity
+com/example/tugasakhirgan/activity_pembayaran.java
+ com.example.tugasakhirgan.activity_pembayaran
+com/example/tugasakhirgan/Activity_konfigurasijaringan.java
+ com.example.tugasakhirgan.Activity_konfigurasijaringan
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$1
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$2
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$2$1
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$3
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$4
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$5
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$6
+ com.example.tugasakhirgan.Activity_konfigurasijaringan$7
+com/example/tugasakhirgan/activity_jasakonsultan.java
+ com.example.tugasakhirgan.activity_jasakonsultan
+ com.example.tugasakhirgan.activity_jasakonsultan$1
+ com.example.tugasakhirgan.activity_jasakonsultan$2
+ com.example.tugasakhirgan.activity_jasakonsultan$2$1
+ com.example.tugasakhirgan.activity_jasakonsultan$3
+ com.example.tugasakhirgan.activity_jasakonsultan$4
+ com.example.tugasakhirgan.activity_jasakonsultan$5
+ com.example.tugasakhirgan.activity_jasakonsultan$6
+ com.example.tugasakhirgan.activity_jasakonsultan$7
 com/example/tugasakhirgan/MainActivity.java
  com.example.tugasakhirgan.MainActivity
  com.example.tugasakhirgan.MainActivity$1
@@ -45,9 +58,23 @@ com/example/tugasakhirgan/MainActivity.java
  com.example.tugasakhirgan.MainActivity$4
  com.example.tugasakhirgan.MainActivity$5
  com.example.tugasakhirgan.MainActivity$6
-com/example/tugasakhirgan/BuildConfig.java
- com.example.tugasakhirgan.BuildConfig
 com/example/tugasakhirgan/activity_instalasiserver.java
  com.example.tugasakhirgan.activity_instalasiserver
+ com.example.tugasakhirgan.activity_instalasiserver$1
+ com.example.tugasakhirgan.activity_instalasiserver$2
+ com.example.tugasakhirgan.activity_instalasiserver$2$1
+ com.example.tugasakhirgan.activity_instalasiserver$3
+ com.example.tugasakhirgan.activity_instalasiserver$4
+ com.example.tugasakhirgan.activity_instalasiserver$5
+ com.example.tugasakhirgan.activity_instalasiserver$6
+ com.example.tugasakhirgan.activity_instalasiserver$7
 com/example/tugasakhirgan/activity_perdaganganti.java
  com.example.tugasakhirgan.activity_perdaganganti
+ com.example.tugasakhirgan.activity_perdaganganti$1
+ com.example.tugasakhirgan.activity_perdaganganti$2
+ com.example.tugasakhirgan.activity_perdaganganti$2$1
+ com.example.tugasakhirgan.activity_perdaganganti$3
+ com.example.tugasakhirgan.activity_perdaganganti$4
+ com.example.tugasakhirgan.activity_perdaganganti$5
+ com.example.tugasakhirgan.activity_perdaganganti$6
+ com.example.tugasakhirgan.activity_perdaganganti$7
