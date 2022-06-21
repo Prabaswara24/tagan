@@ -35,7 +35,6 @@ public class activity_instalasiserver extends AppCompatActivity {
     RadioGroup radiogroup;
     RadioButton rb1, rb2, rb3, rb4, rb5;
     TextView total;
-    String jasa = "";
     String harga = "";
 
     @Override
@@ -94,7 +93,6 @@ public class activity_instalasiserver extends AppCompatActivity {
                                                     login.setVisibility(View.VISIBLE);
                                                     bayar.setVisibility(View.GONE);
                                                 }
-                                                jasa = jsonObject.getJSONObject(0).getString("nama");
                                                 harga = jsonObject.getJSONObject(0).getString("harga");
                                                 id_jasa[0] = jsonObject.getJSONObject(0).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(0).getString("harga"));
@@ -110,7 +108,6 @@ public class activity_instalasiserver extends AppCompatActivity {
                                                     login.setVisibility(View.VISIBLE);
                                                     bayar.setVisibility(View.GONE);
                                                 }
-                                                jasa = jsonObject.getJSONObject(1).getString("nama");
                                                 harga = jsonObject.getJSONObject(1).getString("harga");
                                                 id_jasa[0] = jsonObject.getJSONObject(1).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(1).getString("harga"));
@@ -126,7 +123,6 @@ public class activity_instalasiserver extends AppCompatActivity {
                                                     login.setVisibility(View.VISIBLE);
                                                     bayar.setVisibility(View.GONE);
                                                 }
-                                                jasa = jsonObject.getJSONObject(2).getString("nama");
                                                 harga = jsonObject.getJSONObject(2).getString("harga");
                                                 id_jasa[0] = jsonObject.getJSONObject(2).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(2).getString("harga"));
@@ -142,7 +138,6 @@ public class activity_instalasiserver extends AppCompatActivity {
                                                     login.setVisibility(View.VISIBLE);
                                                     bayar.setVisibility(View.GONE);
                                                 }
-                                                jasa = jsonObject.getJSONObject(3).getString("nama");
                                                 harga = jsonObject.getJSONObject(3).getString("harga");
                                                 id_jasa[0] = jsonObject.getJSONObject(3).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(3).getString("harga"));
@@ -158,7 +153,6 @@ public class activity_instalasiserver extends AppCompatActivity {
                                                     login.setVisibility(View.VISIBLE);
                                                     bayar.setVisibility(View.GONE);
                                                 }
-                                                jasa = jsonObject.getJSONObject(4).getString("nama");
                                                 harga = jsonObject.getJSONObject(4).getString("harga");
                                                 id_jasa[0] = jsonObject.getJSONObject(4).getInt("id");
                                                 total.setText(jsonObject.getJSONObject(4).getString("harga"));
@@ -225,7 +219,7 @@ public class activity_instalasiserver extends AppCompatActivity {
                 Map<String, String> params = new HashMap<>();
                 params.put("id_user", String.valueOf(user.getId()));
                 params.put("id_metode", "1");
-                params.put("jasa", jasa);
+                params.put("jasa", "jasa_instalasi_server");
                 params.put("id_jasa", String.valueOf(id_jasa[0]));
                 params.put("harga", harga);
                 params.put("id_transfer", "1");
