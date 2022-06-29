@@ -3,26 +3,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#ffffff">
 
     <ScrollView
+        android:layout_weight="3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="3">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="926dp"
             android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/hijau">
 
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/network"
+                    android:src="@drawable/network" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jasa Konfigurasi Jaringan"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginRight="175dp"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/gender_textview"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/headline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Paket Instalasi Routing"
+                        android:textColor="@color/black"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <RadioButton
+                        android:id="@+id/Paket_Instalasi_Routing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/headline"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:text="-"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="#292828" />
+                    <TextView
+                        android:id="@+id/headline1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Paket Istalasi Switch"
+                        android:textColor="@color/black"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <RadioButton
+                        android:id="@+id/Paket_Istalasi_Switch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/headline1"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:text="-"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="#292828" />
+                    <TextView
+                        android:id="@+id/headline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Paket Instalasi Email Security"
+                        android:textColor="@color/black"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <RadioButton
+                        android:id="@+id/Paket_Instalasi_Email_Security"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/headline2"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:text="-"
+                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textColor="#292828" />
+
+                </RadioGroup>
+            </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="200dp"
-                android:background="@color/hijau"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@color/hijau">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Total Rp." />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
 
                 <Button
                     android:id="@+id/btn_bayar"
@@ -50,130 +168,7 @@
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total Rp."
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/tv_total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
-
             </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <RadioGroup
-                    android:id="@+id/radio_group"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@+id/gender_textview"
-                    android:orientation="vertical">
-
-                    <RadioButton
-                        android:id="@+id/Paket_Instalasi_Routing"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_below="@id/headline"
-                        android:layout_marginTop="8dp"
-                        android:text="-"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="#292828" />
-
-                    <RadioButton
-                        android:id="@+id/Paket_Istalasi_Switch"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_below="@id/headline1"
-                        android:layout_marginTop="8dp"
-                        android:text="-"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="#292828" />
-
-                    <RadioButton
-                        android:id="@+id/Paket_Instalasi_Email_Security"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_below="@id/headline2"
-                        android:layout_marginTop="8dp"
-                        android:text="-"
-                        android:textAppearance="?attr/textAppearanceBody2"
-                        android:textColor="#292828" />
-
-                    <TextView
-                        android:id="@+id/headline"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:text="Paket Instalasi Routing"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/headline2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:text="Paket Instalasi Email Security"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/headline1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:text="Paket Istalasi Switch"
-                        android:textAppearance="?attr/textAppearanceHeadline6"
-                        android:textColor="@color/black" />
-
-                </RadioGroup>
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@color/hijau">
-
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="50dp"
-                    android:background="@drawable/network"
-                    android:src="@drawable/network" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginRight="175dp"
-                    android:layout_marginTop="150dp"
-                    android:text="Jasa Konfigurasi Jaringan"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="20dp" />
-
-            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
