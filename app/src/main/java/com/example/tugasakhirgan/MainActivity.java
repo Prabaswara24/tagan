@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button login, logout, chat;
+    Button login, logout, chat, riwayat;
     ImageView pindahHal1;
     ImageView pindahHal2;
     ImageView pindahHal3;
@@ -20,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        chat = findViewById(R.id.btn_chat);
-        login = findViewById(R.id.btn_login);
-        logout = findViewById(R.id.btn_logout);
+        chat = (Button) findViewById(R.id.btn_chat);
+        riwayat = (Button) findViewById(R.id.btn_riwayat);
+        login = (Button) findViewById(R.id.btn_login);
+        logout = (Button) findViewById(R.id.btn_logout);
         pindahHal1 = findViewById(R.id.tap1);
         pindahHal2 = findViewById(R.id.tap2);
         pindahHal3 = findViewById(R.id.tap3);
@@ -32,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
             login.setVisibility(View.GONE);
             logout.setVisibility(View.VISIBLE);
             chat.setVisibility(View.VISIBLE);
+            riwayat.setVisibility(View.VISIBLE);
         } else {
             login.setVisibility(View.VISIBLE);
             logout.setVisibility(View.GONE);
             chat.setVisibility(View.GONE);
+            riwayat.setVisibility(View.GONE);
         }
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +82,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, activity_instalasiserver.class);
+                startActivity(i);
+            }
+        });
+        riwayat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, riwayat.class);
                 startActivity(i);
             }
         });

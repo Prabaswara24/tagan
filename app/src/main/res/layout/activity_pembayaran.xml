@@ -3,42 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#ffffff">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="3">
 
-        <LinearLayout
+             <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="926dp"
             android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="400dp"
-                android:background="@color/hijau"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total Biaya: Rp."
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:id="@+id/tv_total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
-            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -57,8 +34,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginRight="175dp"
                     android:layout_marginTop="150dp"
+                    android:layout_marginRight="175dp"
                     android:text="Pembayaran"
                     android:textAlignment="center"
                     android:textColor="@color/white"
@@ -66,13 +43,46 @@
 
 
             </RelativeLayout>
+                 <TextView
+                     android:paddingLeft="50px"
+                     android:paddingRight="50px"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Rek Bca : 0829058915 a.n. Bensae"
+                     android:textColor="@color/black"
+                     android:layout_marginTop="30dp" />
+                 <TextView
+                     android:paddingLeft="50px"
+                     android:paddingRight="50px"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/black"
+                     android:text="(Jika sudah membayar silahkan upload bukti pembayaran pada riwayat)"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="Rek Bca : 0829058915 (Jika sudah membayar silahkan chat admin untuk melakukan konfirmasi pembayaran)"
-                android:textColor="@color/black" />
+                 <LinearLayout
+                     android:paddingTop="10px"
+                     android:paddingLeft="50px"
+                     android:layout_width="match_parent"
+                     android:layout_height="52dp"
+                     android:layout_marginTop="400dp"
+                     android:background="@color/hijau"
+                     android:orientation="horizontal">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Total Biaya: Rp."
+                         android:textSize="20dp"
+                         android:textColor="@color/black" />
+
+                     <TextView
+                         android:id="@+id/tv_total"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="0"
+                         android:textColor="@color/black"
+                         android:textSize="20dp" />
+                 </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
