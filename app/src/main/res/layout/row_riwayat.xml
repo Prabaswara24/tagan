@@ -24,17 +24,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Jasa: "/>
-                <TextView
-                    android:id="@+id/jasa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="-" />
+                    android:text="ID Pesanan: " />
                 <TextView
                     android:id="@+id/id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"/>
+                    android:text="-"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -43,7 +38,21 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tanggal: " />
+                    android:text="Jasa: "/>
+                <TextView
+                    android:id="@+id/jasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Pelaksanaan: " />
                 <TextView
                     android:id="@+id/tgl"
                     android:layout_width="match_parent"
@@ -79,6 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/tagihan"
+                    android:textStyle="bold"
                     android:text="-" />
             </LinearLayout>
         </LinearLayout>

@@ -74,7 +74,7 @@ public class riwayat extends AppCompatActivity {
 
                                 SimpleDateFormat formatter = new SimpleDateFormat("yyy-MM-dd");
                                 SimpleDateFormat formatterOut = new SimpleDateFormat("dd MMM yyyy");
-                                Date date = formatter.parse(news.getString("tanggal"));
+                                Date date = formatter.parse(news.getString("pelaksanaan"));
 
                                 itemNews.setTanggal(formatterOut.format(date));
 

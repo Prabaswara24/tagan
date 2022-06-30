@@ -1,11 +1,14 @@
 package com.example.tugasakhirgan;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -21,6 +24,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,6 +44,8 @@ public class activity_perdaganganti extends AppCompatActivity {
     RadioButton rb1, rb2, rb3, rb4;
     TextView total;
     String harga = "";
+    EditText txt_pelaksana;
+    final Calendar myCalendar= Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +67,23 @@ public class activity_perdaganganti extends AppCompatActivity {
         rb3 = findViewById(R.id.PengembangabnSistemInformasiInventori_radio_btn);
         rb4 = findViewById(R.id.PengembanganSistemRencanaKerja_radio_btn);
         total = findViewById(R.id.tv_total);
+        txt_pelaksana = findViewById(R.id.txtTglLaksana);
+        DatePickerDialog.OnDateSetListener date =new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int day) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH,month);
+                myCalendar.set(Calendar.DAY_OF_MONTH,day);
+                updateLabel();
+            }
+        };
+        txt_pelaksana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new DatePickerDialog(activity_perdaganganti.this,date,myCalendar.get(Calendar.YEAR),myCalendar.get(Calendar.MONTH),myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
         StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://webadminbensae.my.id/api_ta/JasaController/jasa_pengembangan_si",
                 new Response.Listener<String>() {
                     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -170,12 +197,25 @@ public class activity_perdaganganti extends AppCompatActivity {
         bayar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                userBayar();
+                String date_parse = txt_pelaksana.getText().toString();
+                Date date = null;
+                DateFormat inputFormat = new SimpleDateFormat("dd MMMM yyyy");
+                try {
+                    date = inputFormat.parse(date_parse);
+                    System.out.println(date);
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+                DateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
+                String outputText = outputFormat.format(date);
+                String pelaksanaan = outputText;
+
+                userBayar(pelaksanaan);
             }
         });
     }
 
-    private void userBayar() {
+    private void userBayar(String pelaksanaan) {
 
         //if everything is fine
         StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://webadminbensae.my.id/api_ta/UserController/pembayaran",
@@ -205,6 +245,7 @@ public class activity_perdaganganti extends AppCompatActivity {
                 params.put("jasa", "pengembangan_si");
                 params.put("id_jasa", String.valueOf(id_jasa[0]));
                 params.put("harga", harga);
+                params.put("pelaksanaan", pelaksanaan);
                 params.put("id_transfer", "1");
                 params.put("bukti_pembayaran", "");
                 return params;
@@ -213,4 +254,10 @@ public class activity_perdaganganti extends AppCompatActivity {
 
         VolleySingleton.getInstance(this).addToRequestQueue(stringRequest);
     }
+    private void updateLabel(){
+        String myFormat="dd MMMM yyyy";
+        SimpleDateFormat dateFormat=new SimpleDateFormat(myFormat);
+        txt_pelaksana.setText(dateFormat.format(myCalendar.getTime()));
+    }
+
 }
