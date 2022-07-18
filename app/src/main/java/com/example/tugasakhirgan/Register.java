@@ -43,6 +43,7 @@ public class Register extends AppCompatActivity {
 
     private static final String TAG = "RegisterActivity";
     private static final String URL_FOR_REGISTRATION = "https://webadminbensae.my.id/api_ta/UserController/registrasi";
+    String emailPattern = "[a-zA-Z0-9._-]+@gmail+\\.+[a-z]+";
 
     ProgressDialog progressDialog;
 
@@ -91,6 +92,11 @@ public class Register extends AppCompatActivity {
                 }
                 if (signupInputEmail.getText().toString().trim().isEmpty()) {
                     signupInputEmail.setError("Massukkan Email");
+                    signupInputEmail.requestFocus();
+                    return;
+                }
+                if (!signupInputEmail.getText().toString().trim().matches(emailPattern)) {
+                    signupInputEmail.setError("Harap Gunakan Gmail");
                     signupInputEmail.requestFocus();
                     return;
                 }
@@ -239,92 +245,7 @@ public class Register extends AppCompatActivity {
         //adding the request to volley
         Volley.newRequestQueue(this).add(volleyMultipartRequest);
     }
-//    private void submitForm() {
-//
-//        int selectedId = genderRadioGroup.getCheckedRadioButtonId();
-//        String gender;
-//        if (selectedId == R.id.female_radio_btn)
-//            gender = "Female";
-//        else
-//            gender = "Male";
-//
-//        registerUser(signupInputName.getText().toString(),
-//                signupInputEmail.getText().toString(),
-//                signupInputPassword.getText().toString(),
-//                gender,
-//                signupInputAge.getText().toString(),
-//                signupInputNo.getText().toString());
-//    }
-//
-//    private void registerUser(final String name, final String email, final String password,
-//                              final String gender, final String dob, final String no) {
-//        // Tag used to cancel the request
-//        String cancel_req_tag = "register";
-//
-//        progressDialog.setMessage("Adding you ...");
-//        showDialog();
-//
-//        StringRequest strReq = new StringRequest(Request.Method.POST,
-//                URL_FOR_REGISTRATION, new Response.Listener<String>() {
-//
-//            @Override
-//            public void onResponse(String response) {
-//                Log.d(TAG, "Register Response: " + response);
-//                hideDialog();
-//
-//                try {
-//                    JSONObject jObj = new JSONObject(response);
-//                    boolean error = jObj.getBoolean("status");
-//
-//                    if (!error) {
-//                        String user = jObj.getJSONObject("user").getString("name");
-//                        Toast.makeText(getApplicationContext(), "Hi " + user + ", You are successfully Added!", Toast.LENGTH_SHORT).show();
-//
-//                        // Launch login activity
-//                        Intent intent = new Intent(
-//                                Register.this,
-//                                LoginActivity.class);
-//                        startActivity(intent);
-//                        finish();
-//                    } else {
-//
-//                        String errorMsg = jObj.getString("error_msg");
-//                        Toast.makeText(getApplicationContext(),
-//                                errorMsg, Toast.LENGTH_LONG).show();
-//                    }
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                }
-//
-//            }
-//        }, new Response.ErrorListener() {
-//
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                Log.e(TAG, "Registration Error: " + error.getMessage());
-//                Toast.makeText(getApplicationContext(),
-//                        error.getMessage(), Toast.LENGTH_LONG).show();
-//                hideDialog();
-//            }
-//        }) {
-//            @Override
-//            protected Map<String, String> getParams() {
-//                // Posting params to register url
-//                Map<String, String> params = new HashMap<String, String>();
-//                params.put("nama", name);
-//                params.put("email", email);
-//                params.put("no", no);
-//                params.put("password", password);
-//                params.put("gender", gender);
-//                params.put("address", dob);
-//                params.put("foto_ktp", "");
-//                return params;
-//            }
-//        };
-//        // Adding request to request queue
-//        VolleySingleton.getInstance(this).addToRequestQueue(strReq);
-//    }
-//
+
     private void showDialog() {
         if (!progressDialog.isShowing())
             progressDialog.show();

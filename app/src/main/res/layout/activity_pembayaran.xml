@@ -20,7 +20,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@color/hijau">
+                android:background="#C689C6">
 
                 <ImageView
                     android:layout_width="80dp"
@@ -65,7 +65,7 @@
                      android:layout_width="match_parent"
                      android:layout_height="52dp"
                      android:layout_marginTop="400dp"
-                     android:background="@color/hijau"
+                     android:background="#C689C6"
                      android:orientation="horizontal">
 
                      <TextView

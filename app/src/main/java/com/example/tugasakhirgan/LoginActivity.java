@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -23,6 +24,7 @@ import java.util.Map;
 
 public class LoginActivity extends MainActivity {
 
+    Button regis;
     EditText editTextUsername, editTextPassword;
 
     @Override
@@ -30,14 +32,9 @@ public class LoginActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        if (SharedPrefmanager.getInstance(this).isLoggedIn()) {
-            finish();
-            startActivity(new Intent(this, MainActivity.class));
-        }
-
+        regis = (Button) findViewById(R.id.btn_regis);
         editTextUsername = findViewById(R.id.username);
         editTextPassword = findViewById(R.id.password);
-
 
         //if user presses on login
         //calling the method login
@@ -49,10 +46,10 @@ public class LoginActivity extends MainActivity {
         });
 
         //if user presses on not registered
-        findViewById(R.id.btn_registrasi).setOnClickListener(new View.OnClickListener() {
+        regis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), Register.class);
+                Intent i = new Intent(LoginActivity.this, Register.class);
                 startActivity(i);
             }
         });

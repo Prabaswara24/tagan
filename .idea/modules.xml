@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tugas_Akhir_Gan.iml" filepath="$PROJECT_DIR$/.idea/modules/Tugas_Akhir_Gan.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Tugas_Akhir_Gan.app.unitTest.iml" />
     </modules>
   </component>
 </project>

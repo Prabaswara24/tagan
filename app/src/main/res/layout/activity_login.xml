@@ -4,8 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/hijau"
-    tools:context=".login">
+    android:background="#C689C6"
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/icon_image"
@@ -24,7 +24,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
-        android:background="#48D1CC"
+        android:background="#E8A0BF"
         android:padding="16dp">
 
         <Button
@@ -73,14 +73,12 @@
         android:layout_marginBottom="30dp">
 
         <Button
-            android:id="@+id/btn_registrasi"
+            android:id="@+id/btn_regis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title_footer"
             android:layout_marginTop="10dp"
             android:background="#FFFFFF"
-            android:clickable="true"
-            android:focusable="true"
             android:gravity="center"
             android:text="Registrasi"
             android:textColor="@android:color/black"
