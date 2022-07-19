@@ -107,6 +107,7 @@ public class LoginActivity extends MainActivity {
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(getApplicationContext(), "Akun Tidak Ditemukan", Toast.LENGTH_SHORT).show();
                         }
                     }
                 },

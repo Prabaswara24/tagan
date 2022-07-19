@@ -180,6 +180,13 @@ public class Activity_konfigurasijaringan extends AppCompatActivity {
         bayar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (txt_pelaksana.getText().toString().trim().isEmpty()) {
+                    Toast.makeText(Activity_konfigurasijaringan.this, "Masukkan Tanggal Pelaksanaan", Toast.LENGTH_SHORT).show();
+                    txt_pelaksana.requestFocus();
+                    return;
+                }
+
                 String date_parse = txt_pelaksana.getText().toString();
                 Date date = null;
                 DateFormat inputFormat = new SimpleDateFormat("dd MMMM yyyy");
