@@ -1,10 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.customview:customview:1.1.0@aar">
     <CLASSES>
-      <root url="jar://$APPLICATION_HOME_DIR$/.gradle/caches/transforms-2/files-2.1/ab7115890f56e160693dd724b387ceaf/customview-1.1.0/jars/classes.jar!/" />
       <root url="file://$APPLICATION_HOME_DIR$/.gradle/caches/transforms-2/files-2.1/ab7115890f56e160693dd724b387ceaf/customview-1.1.0/res" />
-      <root url="file://$APPLICATION_HOME_DIR$/.gradle/caches/transforms-2/files-2.1/ab7115890f56e160693dd724b387ceaf/customview-1.1.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ab7115890f56e160693dd724b387ceaf/customview-1.1.0/res" />
+      <root url="file://$APPLICATION_HOME_DIR$/.gradle/caches/transforms-3/4256eb7d1165099cdd30ddd844e112fc/transformed/customview-1.1.0/AndroidManifest.xml" />
+      <root url="jar://$APPLICATION_HOME_DIR$/.gradle/caches/transforms-3/4256eb7d1165099cdd30ddd844e112fc/transformed/customview-1.1.0/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/.gradle/caches/transforms-3/4256eb7d1165099cdd30ddd844e112fc/transformed/customview-1.1.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
