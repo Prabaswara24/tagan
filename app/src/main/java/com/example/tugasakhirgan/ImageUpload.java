@@ -150,7 +150,7 @@ public class ImageUpload extends AppCompatActivity{
 
     private void uploadBitmap(final Bitmap bitmap) {
 
-        VolleyMultipartRequest volleyMultipartRequest = new VolleyMultipartRequest(Request.Method.POST, "https://webadminbensae.my.id/api_ta/UserController/bukti/"+id,
+        VolleyMultipartRequest volleyMultipartRequest = new VolleyMultipartRequest(Request.Method.POST, "https://ta-mifpolije.com/E31192259/UserController/bukti/"+id,
                 new Response.Listener<NetworkResponse>() {
                     @Override
                     public void onResponse(NetworkResponse response) {

@@ -83,7 +83,7 @@ public class Activity_konfigurasijaringan extends AppCompatActivity {
             }
         });
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://webadminbensae.my.id/api_ta/JasaController/konfigurasi",
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://ta-mifpolije.com/E31192259/JasaController/konfigurasi",
                 new Response.Listener<String>() {
                     @RequiresApi(api = Build.VERSION_CODES.O)
                     @Override
@@ -208,7 +208,7 @@ public class Activity_konfigurasijaringan extends AppCompatActivity {
     private void userBayar(String pelaksanaan) {
 
         //if everything is fine
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://webadminbensae.my.id/api_ta/UserController/pembayaran",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://ta-mifpolije.com/E31192259/UserController/pembayaran",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

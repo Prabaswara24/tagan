@@ -45,7 +45,7 @@ public class riwayat extends AppCompatActivity {
     private void getNews() {
         User user = SharedPrefmanager.getInstance(this).getUser();
 
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://webadminbensae.my.id/api_ta/UserController/riwayat/"+user.getId(),
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, "https://ta-mifpolije.com/E31192259/UserController/riwayat/"+user.getId(),
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {

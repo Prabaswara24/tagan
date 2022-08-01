@@ -42,7 +42,7 @@ import androidx.core.content.ContextCompat;
 public class Register extends AppCompatActivity {
 
     private static final String TAG = "RegisterActivity";
-    private static final String URL_FOR_REGISTRATION = "https://webadminbensae.my.id/api_ta/UserController/registrasi";
+    private static final String URL_FOR_REGISTRATION = "https://ta-mifpolije.com/E31192259/UserController/registrasi";
     String emailPattern = "[a-zA-Z0-9._-]+@gmail+\\.+[a-z]+";
 
     ProgressDialog progressDialog;

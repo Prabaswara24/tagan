@@ -74,7 +74,7 @@ public class LoginActivity extends MainActivity {
         }
 
         //if everything is fine
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://webadminbensae.my.id/api_ta/UserController/login",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://ta-mifpolije.com/E31192259/UserController/login",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
